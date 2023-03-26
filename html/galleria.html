@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gabri</title>
+        <link rel="stylesheet" href="../css/galleria.css"> 
+    </head>
+    <body>
+        <div class="one">
+            <h1 class="text1">BUON COMPLEANNO AMORE MIO</h1>
+        </div>
+        <div class="two">
+            <h3 class="text1">Ecco per te la galleria online delle nostre foto più belle, che potrai guardare quando vuoi</h3>
+        </div>
+        <div id="content">
+                    
+            <div class="three roba">
+                <h2>Gallery</h2>
+            </div>
+            <div id="roba-7" class="four roba">
+                <p>Noi</p>
+            </div>
+            <div id="roba-0" class="five roba">
+                <p>Marghe</p>
+            </div>
+            <div id="roba-1" class="six roba">
+                <p>Gabri</p>
+            </div>
+            <div id="roba-2" class="seven roba">
+                <p>Addominali</p>
+            </div>
+            <div id="roba-3" class="eight roba">
+                <p>Halloween</p>
+            </div>
+            <div id="roba-4" class="nine roba">
+                <p>Capodanno</p>
+            </div>
+            <div id="roba-5" class="ten roba">
+                <p>Piscina</p>
+            </div>
+            <div id="roba-6" class="eleven roba">
+                <p>Vene</p>
+            </div>
+        </div>
+        <div class="twelve">
+            <h1 class="text2">07/04/2023</h1>
+        </div>
+
+        <script>
+            for (let i = 0; i < 8; i++) {
+                gallery = document.querySelector("#roba-"+i)
+                gallery.addEventListener("click", (event) => {
+                    current_name = event.target.children[0].innerHTML.toLowerCase()
+                    window.location = "./immagini.html?name=" + current_name
+                })
+            }
+        </script>
+    </body>
+</html>

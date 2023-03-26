@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-image: url("../immagini/sfondo.png");
+}
+
+
+#modal_image {
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.box-container {
+    padding: 1rem;
+}
+
+.hidden {
+    display: none;
+
+}
+
+.stop {
+    overflow: hidden;
+}
+
+.add_blur {
+    filter: blur(0.5rem);
+}
+
+.my-modal {
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+    .my-modal {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+

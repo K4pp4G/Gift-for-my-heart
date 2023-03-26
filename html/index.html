@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Regalo per marghe</title>
+  <link rel="stylesheet" href="../css/index.css"> 
+</head>
+
+<body>
+    <div class="background">
+        <div class="main-container">
+        
+            <h1 class="gift">
+                UN REGALO
+            </h1>
+                <a class="image-container">
+                    <img id="regalo" src="../immagini/close1.png" alt="pacco regalo" class="pacco">
+                </a>
+            <h1>
+                PER LA MIA MARGHE
+            </h1>
+        </div>
+        <img id="cuore" src="../immagini/cuore.png" alt="cuore" class="hidden">
+    </div>
+    <script>
+        hearth = document.getElementById("cuore")
+
+        regalo = document.getElementById("regalo")
+        regalo.onclick = function() {
+            hearth.className = "cuore"
+            regalo.className = regalo.className + " resize"
+            setTimeout(() => {
+                hearth.className = "hidden"
+                regalo.className = "pacco"
+                window.location = "./galleria.html"
+            }, 1000)
+        }
+
+    </script>
+</body>
+</html>
